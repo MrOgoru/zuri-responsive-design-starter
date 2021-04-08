@@ -345,3 +345,115 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+.mobile {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+
+
+/*mobile screens */
+@media (max-width: 700px) {
+
+    div.hero-section {
+        padding: 5rem;
+    }
+    div.hero-content-heading h3 {
+        font-size: 1.5rem;
+    }
+    div.hero-content-heading p {
+        font-size: 0.7rem;
+    }
+
+    div.nav-bar {
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        padding: 25px;
+        background: rgb(237, 243, 253);
+        transition: opacity 0.8 ease-in-out;
+        opacity: 0.8;
+        height: 100vh;
+        width: 50%;
+        display: none;
+        
+    }
+
+    .mobile-nav ul li {
+        padding-bottom: 30px;
+    }
+
+    .mobile-nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar.desktop {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        color: #bcc3c7;
+        font-weight: 300;
+        font-size: 1.2rem;
+        transition: 0.5s ease-in-out;
+    }
+
+    .change {
+        display: block;
+    }
+
+    div.hero-background {
+        padding: 5rem 2rem;
+    }
+
+    div.background {
+        padding: 0;
+    }
+
+    div.background h4 {
+        padding: 1.25rem;
+    }
+
+    div.background p {
+        padding: 0 1.25rem;
+    }
+    
+
+   
+    div.hero-background-pos {
+        width: 120px;
+        height: 120px;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+
+
+    div.footer {
+        padding: 3rem 0;
+    }
+
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"], input[type="email"] {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    textarea {
+        width: 62%;
+    }
+
+}
