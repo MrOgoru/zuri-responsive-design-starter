@@ -10,8 +10,19 @@
 <body>
     <div class="nav-bar">
         <div class="logo">Snapshot</div>
+        <h3 class="hamburger">Menu</h3>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--mobile menu-->
+    <div class="hide-desktop mobile-nav mobile">
+        <ul>
+            <li><a href="#" style="color: #1979a3">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
@@ -103,5 +114,15 @@
         </div>
         <h6>Copyright &copy; 2021 Zuri Training.</h6>
     </div>
+
+    <!--navigation-->
+    <script>
+       const navIga = document.querySelector('.hamburger')
+       const mobile = document.querySelector('.mobile-nav')
+       
+       navIga.addEventListener('click', e => {
+        mobile.classList.toggle("change")
+       })
+    </script>
 </body>
 </html>
